@@ -1,242 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
+<html translate="no" data-dpr="1" style="font-size: 48.16px;">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Recharge Records</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-  <link rel="stylesheet" href="/dist/css/adminlte.min.css">
-  <link rel="stylesheet" href="/css/admin.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <title>Big99</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link rel="stylesheet" href="./index_files/index-96409872.css">
+    <link rel="stylesheet" href="../index_files/index-96409872.css">
+    <link href="/css/wallet/main.css" rel="stylesheet" />
+    <link href="/css/wallet/chunk_2-1.css" rel="stylesheet" />
+    <link href="/css/wallet/chunk_2-2.css" rel="stylesheet" />
+    <link href="/css/wallet/chunk_2-3.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/images/bitbug_favicon.ico" type="image/x-icon">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #090909;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mian[data-v-3966082f] {
+            background-color: #22275b
+        }
+
+        .mian .box[data-v-3966082f] {
+            padding: .4rem
+        }
+
+        .mian .box .list[data-v-3966082f] {
+            background: #2b3270;
+            border-radius: .4rem;
+            overflow: hidden
+        }
+
+        .mian .box .list .item[data-v-3966082f] {
+            padding: .26667rem .4rem
+        }
+
+        .mian .box .list .item .money[data-v-3966082f] {
+            font-size: .4rem;
+            color: #fb4e4e
+        }
+
+        .mian .box .list .item .money.action[data-v-3966082f] {
+            color: #6abe57
+        }
+
+        .mian .box .list .item .number[data-v-3966082f],
+        .mian .box .list .item .time[data-v-3966082f] {
+            font-size: .32rem;
+            color: #fff
+        }
+
+        .mian .box .list .item .number[data-v-3966082f] {
+            font-size: .4rem
+        }
+
+        .mian .box .list .item .number .btn[data-v-3966082f] {
+            padding: .13333rem .26667rem;
+            font-size: .32rem;
+            margin-left: .26667rem;
+            border-radius: .13333rem;
+            background-color: #ffce1f;
+            color: #fff
+        }
+
+        .mian .box .list .item .state[data-v-3966082f] {
+            text-align: center;
+            font-weight: 600
+        }
+
+        .mian .box .list .item .txt[data-v-3966082f] {
+            text-align: center
+        }
+
+        html {
+            -webkit-tap-highlight-color: transparent
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Segoe UI, Arial, Roboto, PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        button,
+        input,
+        textarea {
+            color: inherit;
+            font: inherit
+        }
+
+        [class*=van-]:focus,
+        a:focus,
+        button:focus,
+        input:focus,
+        textarea:focus {
+            outline: 0
+        }
+
+        ol,
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+
+        .navbar[data-v-106b99c8] {
+        background: linear-gradient(90deg, rgb(43, 50, 112) 0%, rgb(43, 50, 112) 100%) !important;
+        }
+
+        
+    </style>
 </head>
 
-<body class="hold-transition sidebar-mini">
-  <div class="wrapper">
-    <%- include('nav') %>
-    <div class="content-wrapper">
-      <section class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1>Recharge List</h1>
+<body style="font-size: 12px;">
+    <div id="app">
+        <div data-v-3966082f="" class="mian">
+            <div data-v-106b99c8="" data-v-3966082f="" class="navbar">
+                <div data-v-106b99c8="" class="navbar-left" onclick="location.href='/mian'">
+                    <div data-v-a9660e98="" data-v-106b99c8="" class="c-row c-row-middle-center">
+                        <i class="fa-light fa-angle-left fa-fade fa-xl center" style="color: #FFF"></i>
+                    </div>
+                </div>
+                <div data-v-106b99c8="" class="navbar-title">Recharge Record</div>
+                <div data-v-106b99c8="" class="navbar-right"></div>
             </div>
-          </div>
-        </div>
-        <!-- /.container-fluid -->
-      </section>
+            <div data-v-3966082f="" class="box">
+                <div data-v-3966082f="" class="list m-b-20">
+                    <div data-v-3966082f="" role="feed" class="van-list">
+                        <div class="lisys">
 
-      <div class="form-group" style="text-align: center;">
-        <input type="text" id="search" placeholder="Enter The Account You Want To Search">
-      </div>
-
-      <!-- Main content -->
-      <section class="content">
-        <!-- Default box -->
-        <div class="card">
-          <div class="card-header">
-            <h3 class="card-title">Recharge List</h3>
-            <div class="card-tools">
-              <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                <i class="fas fa-minus"></i>
-              </button>
-              <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-                <i class="fas fa-times"></i>
-              </button>
+                        </div>
+                        <div class="van-list__finished-text">No More Available</div>
+                        <div class="van-list__placeholder"></div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="card-body p-0" style="overflow-y: hidden;">
-            <table class="table table-striped projects" id="table1">
-              <thead>
-                <tr>
-                  <th class="text-center">#</th>
-                  <th class="text-center">Account</th>
-                  <th class="text-center">Type</th>
-                  <th class="text-center">Amount</th>
-                  <th class="text-center">Code</th>
-                  <th class="text-center">UTR</th>
-                  <th class="text-center">Method</th>
-                  <th class="text-center">Time</th>
-                  <th class="text-center">Status</th>
-                  <!-- <th class="text-center"></th> -->
-                </tr>
-              </thead>
-              <tbody>
-                
-              </tbody>
-            </table>
-          </div>
-          <nav aria-label="Page navigation example" style="margin-top: 20px;display: flex;justify-content: center;">
-            <ul class="pagination table1">
-              <li class="page-item previous">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-              </li>
-              <div id="numbers" style="display: flex;"></div>
-              <li class="page-item next">
-                <a class="page-link" href="#">Next</a>
-              </li>
-            </ul>
-          </nav>
+            <div data-v-7692a079="" data-v-3966082f="" class="Loading c-row c-row-middle-center" style="display: none;">
+                <div data-v-7692a079="" class="van-loading van-loading--circular">
+                    <span data-v-7692a079="" class="van-loading__spinner van-loading__spinner--circular"
+                        style="width: auto; height: auto; -webkit-animation-duration: 1s; animation-duration: 1s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 200 200" width="200" height="200" preserveAspectRatio="xMidYMid meet"
+                            style="width: 100%;height: 100%;transform: translate3d(0px, 0px, 0px);content-visibility: visible;">
+                            <g transform="matrix(-0.5984085202217102,0.8011911511421204,-0.8011911511421204,-0.5984085202217102,239.9599609375,79.72173309326172)"
+                                style="display: block;">
+                                <image width="200px" height="200px" preserveAspectRatio="xMidYMid slice"
+                                    xlink:href="/index_files/loadingspinner.png"></image>
+                            </g>
+                            <g transform="matrix(0.9408400058746338,0,0,0.9408400058746338,20.969436645507812,79.30152130126953)"
+                                style="display: block;">
+                                <image width="168px" height="44px" preserveAspectRatio="xMidYMid slice"
+                                    xlink:href="/index_files/h5setting_202401100608011fs2.png"></image>
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
         </div>
-
-      </section>
     </div>
-  <script src="/plugins/jquery/jquery.min.js"></script>
-  <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/dist/js/adminlte.min.js"></script>
-  <script src="/js/admin/admin.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-  <script src="/js/admin/tables.js"></script>
-  <script>
-    function formateT(params) {
-    let result = (params < 10) ? "0" + params : params;
-    return result;
-    }
-
-
-    const PaymentMethodsMap = {
-      upi_gateway: "UPI GATEWAY",
-      upi_gatewa: "UPI GATEWAY",
-      upi_manual: "UPI Manual",
-      usdt_manual: "USDT Manual",
-      usdt_manua: "USDT Manual",
-      wow_pay: "WOW Pay",
-      usdt: "USDT",
-    }
-    
-    function timerJoin(params = '', addHours = 0) {
-        let date = '';
-        if (params) {
-            date = new Date(Number(params));
-        } else {
-            date = new Date();
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/client.js"></script>
+    <script>
+        function formateT(params) {
+            let result = (params < 10) ? "0" + params : params;
+            return result;
         }
-    
-        date.setHours(date.getHours() + addHours);
-    
-        let years = formateT(date.getFullYear());
-        let months = formateT(date.getMonth() + 1);
-        let days = formateT(date.getDate());
-    
-        let hours = date.getHours() % 12;
-        hours = hours === 0 ? 12 : hours;
-        let ampm = date.getHours() < 12 ? "AM" : "PM";
-    
-        let minutes = formateT(date.getMinutes());
-        let seconds = formateT(date.getSeconds());
-    
-        return years + '-' + months + '-' + days + ' ' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
-    }
-    function show(params) {
-      if (params.length == 0) {
-        $('tbody').html(`
-            <tr class="text-center">
-              <td colspan="7">no data...</td>
-            </tr>
-          `);
-        return;
-      }
-      let html = '';
-      params.map((data) => {
-        console.log(data);
-        html += `<tr class="text-center">
-                  <td id="${data.id}">
-                    ${data.id}
-                  </td>
-                  <td>
-                    <b>${data.phone}</b>
-                  </td>
-                  <td>
-                    ${(data.type == 'bank') ? '<b style="color: #3498db">BANKING</b>' : '<b style="color: #a50064">UPI</b>'}
-                  </td>
-                  <td>
-                    <b>${(data.money)}</b>
-                  </td>
-                  <td style="min-width: 190px;">
-                    <b>${data.id_order}</b>
-                  </td>
-                  <td style="min-width: 190px;">
-                    <b>${data.utr}</b>
-                  </td>
-                  <td style="min-width: 190px;">
-                    <b>${PaymentMethodsMap?.[data.type] ? PaymentMethodsMap?.[data.type] : data.type}</b>
-                  </td>
-                  <td style="min-width: 190px;">
-                    <b>${timerJoin(data.time)}</b>
-                  </td>
-                  <td class="project-state">
-                    <span class="badge badge-${(data.status == 1) ? 'success' : 'danger'}">${(data.status == 1) ? 'Success' : 'Closed'}</span>
-                  </td>
-                  <!-- <td class="project-actions text-center" style="min-width: 160px;">
-                    <a class="btn btn-success btn-sm confirm-btn" href="" data="${data.id}"><i class="fa fa-check"></i></a>
-                    <!-- <a class="btn btn-info btn-sm" href="#"><i class="fas fa-pencil-alt"></i></a> -->
-                    <a class="btn btn-danger btn-sm delete-btn" href="#" data="${data.id}"><i class="fas fa-trash"></i></a>
-                  </td> -->
-                </tr>`;
-              })
-          $('tbody').html(html);
-          $('.btn-success').click(function (e) { 
-            e.preventDefault();
-            let id = $(this).attr('data');
-            $.ajax({
-              type: "POST",
-              url: "/api/webapi/admin/rechargeDuyet",
-              data: {
-                id: id,
-                type: 'confirm'
-              },
-              dataType: "json",
-              success: function (response) {
-                Swal.fire(
-                  'Good job!',
-                  'You clicked the button!',
-                  'success'
-                )
-                setTimeout(() => {
-                  location.reload();
-                }, 100);
-              }
+
+        function timerJoin(params = '', addHours = 0) {
+            let date = '';
+            if (params) {
+                date = new Date(Number(params));
+            } else {
+                date = new Date();
+            }
+
+            date.setHours(date.getHours() + addHours);
+
+            let years = formateT(date.getFullYear());
+            let months = formateT(date.getMonth() + 1);
+            let days = formateT(date.getDate());
+
+            let hours = date.getHours() % 12;
+            hours = hours === 0 ? 12 : hours;
+            let ampm = date.getHours() < 12 ? "AM" : "PM";
+
+            let minutes = formateT(date.getMinutes());
+            let seconds = formateT(date.getSeconds());
+
+            return years + '-' + months + '-' + days + ' ' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+        }
+        function loads(datas) {
+            let html = datas.map((data) => {
+                return `
+                    <div data-v-3966082f="" class="item c-row c-row-between m-b-10">
+                        <div data-v-3966082f="">
+                            <div data-v-3966082f="" class="number c-row">
+                                ${data.id_order}
+                                <div data-v-3966082f="" class="m-l-10 tag-read van-image" data-clipboard-text="${data.id_order}" style="width: 18px; height: 15px;"><img src="/images/copy.png" class="van-image__img" /></div>
+                            </div>
+                            <div data-v-3966082f="">
+                                <div data-v-3966082f="" class="money action m-b-10 m-t-10">
+                                    <!---->
+                                    <span data-v-3966082f="">₹ ${data.money}.00</span>
+                                </div>
+                            </div>
+                            <div data-v-3966082f="" class="time">${timerJoin(data.time)}</div>
+                        </div>
+                        <div data-v-3966082f="">
+                            <div data-v-3966082f="" class="state m-b-5">
+                                <!---->
+                                <div data-v-4e585e69="" style="color: ${(data.status == 1) ? 'rgb(107, 190, 88)' : (data.status == 0) ? 'rgb(255 171 0);' : 'red'}"> ${(data.status == 1) ? 'Success' : (data.status == 2) ? 'Cancelled' : 'Pending'}</div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                    `;
+            })
+            $('.van-list .lisys').html(html);
+            $('.number').click(function (e) {
+                e.preventDefault();
+                let text = $(this).text().trim();
+                navigator.clipboard.writeText(text);
+                $(this).addClass('block-click');
+                alertMess('Copy successful', $(this));
             });
-          });
-          $('.btn-danger').click(function (e) { 
-            e.preventDefault();
-            let id = $(this).attr('data');
-            $.ajax({
-              type: "POST",
-              url: "/api/webapi/admin/rechargeDuyet",
-              data: {
-                id: id,
-                type: 'delete'
-              },
-              dataType: "json",
-              success: function (response) {
+        }
+        function alertMess(text, sic) {
+            $('body').append(
+                `
+                <div data-v-1dcba851="" class="msg">
+                    <div data-v-1dcba851="" class="msg-content v-enter-active v-enter-to" style=""> ${text} </div>
+                </div>
+                `
+            );
+            setTimeout(() => {
+                $('.msg .msg-content').removeClass('v-enter-active v-enter-to');
+                $('.msg .msg-content').addClass('v-leave-active v-leave-to');
                 setTimeout(() => {
-                  location.reload();
+                    $('.msg').remove();
                 }, 100);
-                Swal.fire(
-                  'Good job!',
-                  'You clicked the button!',
-                  'success'
-                )
-              }
+                sic.removeClass('block-click');
+            }, 1000);
+        }
+        $.ajax({
+            type: "GET",
+            url: "/api/webapi/recharge/list",
+            dataType: "json",
+            success: function (response) {
+                if (response.datas.length == 0) return;
+                loads(response.datas);
+            }
+        });
+
+        const searchParams = new URLSearchParams(window.location.search);
+
+        const clientTxnId = searchParams.get("client_txn_id")
+        const txnId = searchParams.get("txn_id")
+
+        if (!!txnId && !!clientTxnId) {
+            $.ajax({
+                type: "POST",
+                url: "/api/webapi/confirm_recharge",
+                data: {
+                    client_txn_id: clientTxnId,
+                    txn_id: txnId,
+                },
+                dataType: "json",
+                success: function (response) {
+                    window.location.href = `${window.location.origin}${window.location.pathname}`
+                    //window.location.reload()
+                    localStorage.removeItem("userData")
+                }
             });
-          });
-    }
-    $.ajax({
-      type: "POST",
-      url: "/api/webapi/admin/recharge",
-      data: {
-        
-      },
-      dataType: "json",
-      success: function (response) {
-        show(response.datas2)
-      }
-    });
-  </script>
+        }
+    </script>
 </body>
 
 </html>
