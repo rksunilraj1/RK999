@@ -1,6 +1,6 @@
-import 'dotenv/config'
+import 'dotenv/config';
 
-import express from 'express';
+import express from "express;
 import configViewEngine from "./src/config/configEngine.js;
 import routes from './routes/web';
 import cronJobContronler from './controllers/cronJobContronler';
