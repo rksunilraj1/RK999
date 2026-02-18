@@ -1,11 +1,11 @@
 import 'dotenv/config';
 
-import express from "express;
-import configViewEngine from "./src/config/configEngine.js;
+import express from "express";
+import configViewEngine from "./src/config/configEngine.js";
 import routes from './routes/web';
 import cronJobContronler from './controllers/cronJobContronler';
 import socketIoController from './controllers/socketIoController';
-require('dotenv').config();
+import dotenv from "dotenv";
 let cookieParser = require('cookie-parser');
 
 const app = express();
