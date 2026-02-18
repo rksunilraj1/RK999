@@ -1,20 +1,40 @@
-const express = require("express");
-const path = require("path");
+import 'dotenv/config'
+
+import express from 'express';
+import configViewEngine from './config/configEngine';
+import routes from './routes/web';
+import cronJobContronler from './controllers/cronJobContronler';
+import socketIoController from './controllers/socketIoController';
+require('dotenv').config();
+let cookieParser = require('cookie-parser');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const server = require('http').createServer(app);
+const io = require('socket.io')(server);
 
-// EJS setup
-app.set("view engine", "ejs");
+const port = process.env.PORT || 3000;
 
-// ⚠️ Tumhare .ejs files abhi root me hain, isliye views folder ki jagah root set
-app.set("views", path.join(__dirname));
+app.use(cookieParser());
+// app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-// Static folders (agar css/js/images folders hain)
-app.use(express.static(__dirname));
+// setup viewEngine
+configViewEngine(app);
+// init Web Routes
+routes.initWebRouter(app);
 
-app.get("/", (req, res) => {
-  res.render("index"); // index.ejs
+// Cron game 1 Phut 
+cronJobContronler.cronJobGame1p(io);
+
+// Check xem ai connect vào sever 
+socketIoController.sendMessageAdmin(io);
+
+// app.all('*', (req, res) => {
+//     return res.render("404.ejs"); 
+// });
+
+server.listen(port, () => {
+    console.log("Connected success port: " + port);
 });
 
-app.listen(PORT, () => console.log("Running on", PORT));
